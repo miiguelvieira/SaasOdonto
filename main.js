@@ -143,3 +143,48 @@ console.log(`O resultado da soma é: ${result}`);
 console.log("================================");
 console.log("======NOTHIN TO DECLAIRE 2 =====");
 console.log("================================");    
+
+
+
+const submitButton = document.querySelector("#submit-button");
+submitButton.addEventListener("click", function(event) {
+    event.preventDefault();
+    console.log("====================");
+    console.log("O botão foi clicado!");
+    console.log("====================");
+});
+
+const nameInput = document.querySelector("#name");
+const emailInput = document.querySelector("#email");
+//emailInput.addEventListener("input", function(event) {
+//    console.log("O valor do input mudou para: " + emailInput);
+//});
+const myForm = document.querySelector("#my-form");
+const items = document.querySelector(".items");
+const body = document.querySelector("body");
+submitButton.addEventListener("click", function(event) {
+    event.preventDefault();
+    const nameValue = nameInput.value;
+    const emailValue = emailInput.value;
+
+    if(nameValue === "" || emailValue === "") {
+        return alert("Por favor, preencha todos os campos.");
+        
+    }
+    myForm.style.backgroundColor = "lightgreen";
+    items.firstElementChild.textContent = nameValue;
+    items.children[1].textContent = emailValue;
+    items.lastElementChild.textContent = "dummy text";
+
+    body.style.backgroundColor = "white";
+
+
+
+    console.log("Nome: " + nameValue);
+    console.log("Email: " + emailValue);
+
+
+});
+
+
+
