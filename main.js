@@ -139,3 +139,7 @@ function sum1(a, b) {
 
 const result = sum1(5, 10);
 console.log(`O resultado da soma é: ${result}`);    
+
+console.log("================================");
+console.log("======NOTHIN TO DECLAIRE 2 =====");
+console.log("================================");    
