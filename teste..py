@@ -8,3 +8,9 @@ def sum1(a, b):
 
 result = sum1(5, 10)
 print(f"O resultado da soma é: {result}")
+
+def multiply(a, b):
+    return a * b
+
+resolut = multiply(5, 10)
+print(f"O resultado da multiplicação é: {resolut}")
